@@ -9,6 +9,9 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 
 const app = express()
 const port = 4200
+app.get('/',(req, res)=>{
+  res.send("welcome to my website");
+})
 
 // middleware
  app.use(express.json());
